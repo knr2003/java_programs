@@ -1,0 +1,36 @@
+class Main{
+    public static void main(String args[]){
+       
+		int n=8,k,space;
+		
+		//logic for upward equilateral triangle
+		space=n-1;
+		for(int row=1;row<=n;row++){
+			for(k=space;k>0;k--){
+				System.out.print(" ");
+			}
+			space--;
+			for(int col=1;col<=row;col++){
+				System.out.print("*");
+			}
+			System.out.println();
+		}
+		
+		//logic for downward equilateral triangle
+		for(int row=1;row<=n;row++){
+			for(k=1;k<row;k++){
+				System.out.print(" ");
+			}
+			for(int col=1;col<=n-row+1;col++){
+				System.out.print("*");
+			
+			}
+			System.out.println("");
+			
+			
+			
+		}
+		
+		
+    }
+}
